@@ -1,0 +1,84 @@
+\documentclass{beamer}
+\usepackage[size=a0,scale=1.7]{beamerposter}
+\usepackage{theme}
+\usepackage{blindtext}
+
+\begin{document}
+
+\begin{frame}[t]
+
+  \frametitle{\vspace{-0.75cm} \newline Title}
+  \framesubtitle{Authors \newline \vspace{0.05cm}}
+
+  \begin{columns}[t]
+
+
+    % Column 1
+    \begin{column}{.3\textwidth}
+
+      \begin{block}{Section \#1}
+        \blindtext
+      \end{block}
+
+      \vspace{1.5cm}
+
+      \begin{block}{Section \#2}
+        \blindtext
+      \end{block}
+
+    \end{column}
+
+
+    % Column 2
+    \begin{column}{.3\textwidth}
+
+      \begin{block}{Section \#3}
+
+        \blindtext[2]
+
+        \setlength{\tabcolsep}{22pt} % column space
+        \vspace{1em}
+        \centering
+        \begin{tabular}{rrrrr}
+          \toprule
+          a & b & c & d & e\\
+          \midrule
+          0 & 3 & 6 & 9  & 12 \\
+          1 & 4 & 7 & 10 & 13 \\
+          2 & 5 & 8 & 11 & 14 \\
+          \bottomrule
+        \end{tabular}
+
+      \end{block}
+      
+    \end{column}
+
+
+    % Column 3
+    \begin{column}{.3\textwidth}
+
+      \begin{block}{Section \#4}
+        \blindtext
+
+        \attention{\textbf{Attention-grabbing take-away message.}}
+
+      \end{block}
+
+      \vspace{1.5cm}
+
+      \begin{block}{Section \#5}
+        \blindtext
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

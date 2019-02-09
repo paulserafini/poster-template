@@ -1,0 +1,51 @@
+\usepackage{booktabs}
+\usepackage[scaled]{helvet} % nicer font
+
+\setlength\heavyrulewidth{0.6ex} % toprule thickness
+\setlength\lightrulewidth{0.4ex} % midrule thickness
+
+% Footer logo
+\setbeamertemplate{footline} {
+  \leavevmode%
+  \hbox{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1in,dp=1em,right]{date in head/foot}%
+      \includegraphics[height=1in]{sfu.pdf} \hspace{1em} \newline Simon Fraser University \hspace{1em}
+    \end{beamercolorbox}
+  }
+}
+
+% Wrap text in a box
+\newcommand{\attention}[1] {
+  \setlength{\fboxrule}{5pt} % thicker lines
+  \vspace{1em}
+  \centering
+  \fbox{
+    \parbox{0.75\textwidth}{ \centering #1 }
+  }
+}
+
+% colour scheme
+\definecolor{frametitlefg}{RGB}{255,255,255}
+\definecolor{frametitlebg}{RGB}{166,25,46}
+\definecolor{framebg}{RGB}{255,255,255}
+\definecolor{blocktitlefg}{RGB}{255,255,255}
+\definecolor{blocktitlebg}{RGB}{166,25,46}
+\definecolor{blockbodybg}{RGB}{255,255,255}
+% \definecolor{blockbodybg}{RGB}{246,222,190}
+\definecolor{blockbodyfg}{RGB}{90,74,66}
+
+\setbeamercolor{background canvas}{bg=framebg}
+
+\setbeamertemplate{frametitle}[default][center]
+\setbeamercolor{frametitle}{bg=frametitlebg, fg=frametitlefg}
+\setbeamerfont{frametitle}{series=\bfseries}
+
+\setbeamerfont{framesubtitle}{size=\normalsize}
+
+\setbeamertemplate{blocks}[shadow=true]
+\setbeamercolor{block title}{bg=blocktitlebg, fg=blocktitlefg}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamercolor{block body}{use=structure, fg=blockbodyfg, bg=blockbodybg}
+
+\setbeamercolor{date in head/foot}{fg=blockbodyfg, bg=white}
+\setbeamertemplate{navigation symbols}{} % remove navigation symbols

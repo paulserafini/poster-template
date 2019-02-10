@@ -28,28 +28,20 @@
   }
 }
 
-% colour scheme
-\definecolor{frametitlefg}{RGB}{255,255,255}
-\definecolor{frametitlebg}{RGB}{166,25,46}
-\definecolor{framebg}{RGB}{255,255,255}
-\definecolor{blocktitlefg}{RGB}{255,255,255}
-\definecolor{blocktitlebg}{RGB}{166,25,46}
-\definecolor{blockbodybg}{RGB}{255,255,255}
-% \definecolor{blockbodybg}{RGB}{246,222,190}
-\definecolor{blockbodyfg}{RGB}{90,74,66}
+% sfu.ca/communicators-toolkit/tools/brand-tools/colours.html
+\definecolor{SFUred}{HTML}{A6192E}
+\definecolor{SFUgrey}{HTML}{54585A}
 
-\setbeamercolor{background canvas}{bg=framebg}
+\setbeamercolor{background canvas}{bg=white}
 
 \setbeamertemplate{frametitle}[default][center]
-\setbeamercolor{frametitle}{bg=frametitlebg, fg=frametitlefg}
+\setbeamercolor{frametitle}{bg=SFUred, fg=white}
 \setbeamerfont{frametitle}{series=\bfseries}
-
 \setbeamerfont{framesubtitle}{size=\normalsize}
 
-\setbeamertemplate{blocks}[shadow=true]
-\setbeamercolor{block title}{bg=blocktitlebg, fg=blocktitlefg}
+\setbeamercolor{block title}{bg=SFUred, fg=white}
 \setbeamerfont{block title}{series=\bfseries}
-\setbeamercolor{block body}{use=structure, fg=blockbodyfg, bg=blockbodybg}
+\setbeamercolor{block body}{use=structure, fg=SFUgrey, bg=white}
 
-\setbeamercolor{date in head/foot}{fg=blockbodyfg, bg=white}
+\setbeamercolor{logo}{fg=SFUgrey, bg=white}
 \setbeamertemplate{navigation symbols}{} % remove navigation symbols
